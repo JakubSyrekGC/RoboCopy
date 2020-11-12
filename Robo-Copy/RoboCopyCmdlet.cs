@@ -8,8 +8,8 @@ using System.Diagnostics;
 
 namespace Robo_Copy
 {
-    [Cmdlet(VerbsCommon.Copy, "Robo" )]
-    public class Class1 : PSCmdlet
+    [Cmdlet("Robo", VerbsCommon.Copy)]
+    public class RoboCopyCmdlet : PSCmdlet
     {
         private string _source;
         private string _destination;
@@ -97,5 +97,7 @@ namespace Robo_Copy
             }
             base.ProcessRecord();
         }
+        
+
     }
 }
